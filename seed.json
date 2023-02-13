@@ -1,0 +1,29 @@
+[
+    {
+        "category": "Animal",
+        "question": "What is a dog?",
+        "answer_1": "Insect",
+        "answer_2": "Mammal",
+        "answer_3": "Fish",
+        "answer_4": "Bird",
+        "correct_answer": "Mammal"
+    },
+    {
+        "category": "Geografy",
+        "question": "What is the capital of Sweden",
+        "answer_1": "Gothenburg",
+        "answer_2": "Luleå",
+        "answer_3": "Stockholm",
+        "answer_4": "Malmö",
+        "correct_answer": "Stockholm"
+    },
+    {
+        "category": "Geografy",
+        "question": "What is the name of the tallest mountain in the world?",
+        "answer_1": "Nanga Parbat",
+        "answer_2": "Kangchenjunga",
+        "answer_3": "Lhotse",
+        "answer_4": "Mount Everest",
+        "correct_answer": "Mount Everest"
+    }
+]
