@@ -3,23 +3,18 @@ from sqlite3 import IntegrityError
 import os
 from typing import List, Tuple
 from question import Question
-from quiz_app import BaseValues
 
 
-""" docstring """
 class DB:
     db_url: str
-    db_table_name_questions: str = "questions"
-    # db_table_name_questions: str = "questions"
-    # db_table_name_categories: str = "categories"
-    db_table_name_categories: str = "categories"
+    db_table_name_questions: str
+    db_table_name_categories: str
 
     def __init__(self, db_url: str, db_table_name_questions: str, db_table_name_categories: str):
         self.db_url = db_url
-        # self.db_table_name_questions = db_table_name_questions
-        # self.db_table_name_categories = db_table_name_categories
+        self.db_table_name_questions = db_table_name_questions
+        self.db_table_name_categories = db_table_name_categories
         
-        # Lånad ifrån lesson11
         if not os.path.exists(self.db_url):
             self.init_db()
 
@@ -265,8 +260,8 @@ class DB:
 
 
 if __name__ == "__main__":
-    db_table_name_questions = BaseValues.table_name_questions
-    db_table_name_categories = BaseValues.table_name_categories
+    db_table_name_questions = "questions"
+    db_table_name_categories = "categories"
     db = DB("Question.db", db_table_name_questions, db_table_name_categories)
     db.init_db()
 
