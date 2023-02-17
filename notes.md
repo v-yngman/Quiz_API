@@ -32,6 +32,7 @@
 ## TASK 4: Create the data
 ## TASK 5: Store in sqlite3
 
+
 ## Current functions
 - Seed the database
     - from json file
@@ -64,3 +65,15 @@
 
 - sqlite3 db
     - allows no dublicate questions
+
+
+
+## Kvar att göra
+Flytta in UNIQUE errormessage till Call_DB???
+
+Spara datan i DB till en fil
+- pandas
+	- datan TO csv
+	- datan TO json
+
+CSV.writer
